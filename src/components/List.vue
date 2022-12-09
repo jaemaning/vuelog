@@ -2,8 +2,8 @@
 
 <div>
     <div v-for="(dat,i) in data" :key="i">
-        <h5>{{dat.title}}</h5>
-        <p>{{dat.date}}</p> 
+        <h5 @click="$router.push('/detail/'+i)">{{dat.title}}</h5>
+        <p @click="$router.push('/detail/'+i)">{{dat.date}}</p> 
     </div>
 </div>
 
