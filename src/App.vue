@@ -45,7 +45,18 @@
   </div>
 </nav>
 
-<router-link to="/list"></router-link>
+<div>
+  <button class="mr-1 wd-10">
+    <router-link to="/">홈페이지</router-link>
+  </button>
+  <button class="mr-1 wd-10">
+    <router-link to="/list">리스트페이지</router-link>
+  </button>
+  <button class="mr-1 wd-10">
+    <router-link to="/detail">디테일페이지</router-link>
+  </button>
+</div>
+
 
 <router-view :data="data"></router-view>
 
@@ -96,6 +107,18 @@ export default {
   width:10%;
   margin:0%;
   text-align: right;
+}
+
+.wd-10{
+  width: 30%;
+}
+
+.float{
+  float: left;
+}
+
+.block{
+  display: block;
 }
 
 </style>

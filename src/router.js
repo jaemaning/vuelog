@@ -13,9 +13,9 @@ const routes = [
         component: Home
     },
     {
-        path: "/detail",
+        path: "/detail/:id",
         component: Detail
-    }
+    } // URL parameter 문법 /:작명
 ];
 
 const router = createRouter({
